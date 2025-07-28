@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ColorPalette from './colors'
-import metersLogo  from './assets/Sneda Smart Meter Logo-01[1].png'
-import meter from "./assets/meter.png"
+import profile from "./assets/william.jpg"
+
 function App() {
   const [count, setCount] = useState(0)
 
