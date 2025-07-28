@@ -3,6 +3,7 @@ import ColorPalette from './colors'
 import profile from "./assets/william.jpg"
 import AMSSnapShot from "./assets/AMS.jpg"
 import protonSnahsot from "./assets/proton.png"
+import CV from "./docs/CV.pdf"
 
 const skills = [
   {
@@ -150,7 +151,22 @@ function App() {
                       <p className="py-2 text-lg text-neutral font-work-sans">
                         A <span className="font-bold text-primary">backend developer</span> focused on building robust and scalable systems, <br />
                        complemented by a deepening command of<span className="font-bold text-secondary"> frontend</span>  development. </p>
-                      <button className="btn btn-outline btn-primary mt-4 font-work-sans">Donwload CV</button>
+                       <a
+                          href={CV}
+                          download
+                          className="btn btn-outline btn-primary mt-4 font-work-sans"
+                        >
+                          <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                          className="w-5 h-5"
+                        >
+                          <path d="M14.5 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2zm.5 1.5L19.5 8H15a1 1 0 0 1-1-1V3.5zM8 13h1.5v5H8v-5zm2.25 0h1.75c.69 0 1.25.56 1.25 1.25v2.5c0 .69-.56 1.25-1.25 1.25h-1.75v-5zm1.25 1.5h-.5v2h.5v-2zM16 13h-1.25v5H16a1 1 0 0 0 1-1v-3c0-.55-.45-1-1-1z" />
+                        </svg>
+                          Download CV
+                        </a>
+                      
                     </div>
                   </div>
                 </div>
