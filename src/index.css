@@ -1,4 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Carme&family=Carter+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@397&family=Playwrite+VN+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=TikTok+Sans:opsz,wght@12..36,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+
 @import "tailwindcss";
+
+@theme {
+  /* Display & Decorative Fonts */
+  --font-carattere: "Carattere", cursive;           /* Script/handwriting - perfect for signatures, invitations, creative headers */
+  --font-carter-one: "Carter One", cursive;         /* Bold rounded display - great for logos, fun headings, children's content */
+  --font-playwrite: "Playwrite VN Guides", cursive; /* Handwriting style - ideal for personal touches, quotes, notes */
+  
+  /* Modern Sans-Serif Fonts */
+  --font-montserrat: "Montserrat", sans-serif;      /* Geometric modern - excellent for branding, headlines, tech content */
+  --font-roboto: "Roboto", sans-serif;              /* Google's flagship - perfect for UI, body text, mobile apps */
+  --font-open-sans: "Open Sans", sans-serif;        /* Highly readable - ideal for long-form content, articles, documentation */
+  --font-work-sans: "Work Sans", sans-serif;        /* Clean professional - great for corporate sites, presentations */
+  --font-rubik: "Rubik", sans-serif;                /* Friendly rounded - perfect for startups, creative agencies */
+  --font-lato: "Lato", sans-serif;                  /* Warm humanist - excellent for marketing, blogs, lifestyle content */
+  --font-tiktok: "TikTok Sans", sans-serif;         /* Modern social media - perfect for youth brands, social content */
+  
+  /* Specialty Fonts */
+  --font-oswald: "Oswald", sans-serif;              /* Condensed impact - ideal for headlines, posters, bold statements */
+  --font-carme: "Carme", sans-serif;                /* Minimal elegant - great for fashion, luxury, minimalist designs */
+  --font-yrsa: "Yrsa", serif;                       /* Modern serif - perfect for editorials, literature, sophisticated content */
+}
+
+
 @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "brightGreen";
@@ -57,3 +83,5 @@
   --depth: 2;
   --noise: 0;
 }
+
+
