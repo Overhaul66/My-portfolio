@@ -251,14 +251,14 @@ function App() {
 </div>
 
       {/* contact me */}
-      <form className="font-work-sans max-w-xl mx-auto bg-base-100 p-6 rounded-xl shadow-lg space-y-4 mt-10  " onSubmit={handleSubmit} method="POST">
+      <form className="font-work-sans max-w-xl mx-auto bg-base-100 p-6 rounded-xl shadow-lg space-y-4 mt-10 " onSubmit={handleSubmit} method="POST">
             <h2 className="text-2xl font-bold text-center text-primary">Contact Me</h2>
 
             <div className="form-control">
               <label className="label" htmlFor='name'>
                 <span className="label-text text-neutral">Name</span>
               </label>
-              <input type="text" id="name" placeholder="Your name" className="input input-bordered border-primary placeholder:text-neutral focus:outline-none text-neutral" />
+              <input type="text" id="name" name="name" placeholder="Your name" className="input input-bordered border-primary placeholder:text-neutral focus:outline-none text-neutral" />
               <ValidationError prefix='Name' field='name' errors={state.errors} />
             </div>
 
@@ -266,7 +266,7 @@ function App() {
               <label className="label" htmlFor='email'>
                 <span className="label-text text-neutral">Email</span>
               </label>
-              <input type="email" id="email" placeholder="you@example.com" className="input input-bordered border-primary placeholder:text-neutral focus:outline-none text-neutral"  />
+              <input type="email" id="email" name="email" placeholder="you@example.com" className="input input-bordered border-primary placeholder:text-neutral focus:outline-none text-neutral"  />
               <ValidationError prefix='Email' field='email' errors={state.errors} />
             </div>
 
@@ -274,7 +274,7 @@ function App() {
               <label className="label" htmlFor='message'>
                 <span className="label-text text-neutral">Message</span>
               </label>
-              <textarea id="message" className="textarea textarea-bordered h-32 border-primary focus:outline-none placeholder:text-neutral text-neutral" placeholder="Write your message..."></textarea>
+              <textarea id="message" name="message" className="textarea textarea-bordered h-32 border-primary focus:outline-none placeholder:text-neutral text-neutral" placeholder="Write your message..."></textarea>
               <ValidationError prefix='Message' field='message' errors={state.errors} />
             </div>
 
